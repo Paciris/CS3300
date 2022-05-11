@@ -53,6 +53,10 @@ group :development, :test do
   gem 'capybara', '>= 2.15'
   #Devise authentication gem
   gem 'devise'
+  #Bootstrap
+  gem 'bootstrap', '~> 4.6.1'
+  #JQuery dependency for bootstrap
+  gem 'jquery-rails'
 end
 
 group :development do
