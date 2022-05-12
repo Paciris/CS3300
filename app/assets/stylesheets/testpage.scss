@@ -1,0 +1,63 @@
+$gray1: #ccc;
+$gray2: #777;
+$gray3: #222;
+
+.navbar
+{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap; // allow us to do the line break for collapsing content
+    align-items: center;
+    justify-content: space-between; // space out brand from logo
+    padding: $navbar-padding-y $navbar-padding-x;
+
+    // Because flex properties aren't inherited, we need to redeclare these first
+    // few properities so that content nested within behave properly.
+    > .container,
+    > .container-fluid 
+    {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.text-truncate-container
+{
+    width: 11rem;
+    height: 10rem;
+}
+
+.text-truncate-container p
+{
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+body
+{
+    background: $light;
+    font-size: $font-size-lg;
+    color: $dark;
+}
+
+//?
+
+ /*
+ Navigation menu
+    - Home (shows all projects)
+    - Sign In / Sign Up (When logged in)
+    - Sign Out (When not logged in)
+Index
+    - Bio and portfolio info
+    - All projects w/titles and some descriptions / Also a link to it
+A page that shows content of each individual project (look good)
+
+VERIFY ALL THIS STUFF SATISFIES REQUIREMENTS
+
+WHEN DONE, TAG THIS GODE AS v1.0.0
+SUBMIT HEROKU URL, TRAVIS CI BUILD URL, GITHUB URL IN A WORD DOC
+ */
